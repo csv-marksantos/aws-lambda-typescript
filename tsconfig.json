@@ -1,0 +1,58 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "importHelpers": false,
+    /* Language and Environment */
+    "target": "ES2020",
+    "lib": [
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "strictNullChecks": false,
+    "paths": {
+      "@app/env": [
+        "src/environments/environment.ts"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "serverless.ts",
+    "src/functions/*",
+    "src/services/*",
+    "src/libs/*",
+    "resources/*",
+  ],
+  "exclude": [
+    "node_modules",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*",
+    ".idea/**/*",
+    "dist/**/*",
+    "tests/**/*",
+    "**/**/*.test.ts",
+    "tmp"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}
