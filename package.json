@@ -17,6 +17,7 @@
     "build-qa": "set NODE_ENV=qa&& sls package --package artifacts",
     "build-prod": "set NODE_ENV=prod&& sls package --package artifacts",
     "build-lambdas": "cd ci/tasks && sh build-local.sh",
+    "deploy": "sls deploy",
     "typeorm": "typeorm-ts-node-commonjs",
     "create": "ts-node --transpile-only ./node_modules/typeorm/cli.js migration:generate -n Refactor",
     "lint": "eslint \"**/*.{ts,tsx}\" --quiet --fix",

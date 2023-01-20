@@ -18,7 +18,7 @@ export const baseServerlessConfigProvider: Serverless['provider'] = {
 
 export const baseServerlessConfig: Partial<Serverless> = {
   frameworkVersion: '3',
-  service: 'laps-lambda-nodejs-typescript',
+  service: 'csv-demo',
   package: {
     individually: true,
     excludeDevDependencies: true,
